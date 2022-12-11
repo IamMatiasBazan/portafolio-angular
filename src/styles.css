@@ -177,6 +177,11 @@ input::placeholder{
     position: relative;
     right: 115px;
 }
+
+#nombre{
+    position: relative;
+    right: 105%;
+}
 /* CERRAR CONTACTENOS */
 
 /* FOOTER */

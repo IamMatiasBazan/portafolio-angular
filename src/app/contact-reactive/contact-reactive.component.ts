@@ -15,7 +15,7 @@ export class ContactReactiveComponent implements OnInit {
     this.contactForm = this.initForm();
   }
 
-  onsubmit(): void {
+  onSubmit(): void {
     console.log("Form ->");
   }
 

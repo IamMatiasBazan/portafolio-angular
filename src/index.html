@@ -81,13 +81,13 @@
                     <div id="espacio-contacto">
                         <h1 id="contactenos">CONTÁCTENOS</h1>
                         <div class="formularios">
-                            <form method="POST" action="" [formGroup]="contactForm">
-                                <input class="form-control" type="text" placeholder="Nombre" id="input1" aria-label="readonly input example" readonly required formControlName="name">
-                                <div *ngIf="contactForm.get('nombre')?.touched && contactForm.get('nombre')?.errors?.['required']"
-                                class="alert alert-danger" id="nombre">Nombre requerido</div>
-                                <input class="form-control" type="text" placeholder="Apellido" id="input2" aria-label="readonly input example" readonly required formControlName="surname">
-                                <input class="form-control" type="text" placeholder="Email" id="input3" aria-label="readonly input example" readonly required formControlName="email">
-                                <input class="form-control" type="text" placeholder="Mensaje" id="input4" aria-label="readonly input example" readonly required formControlName="comment">
+                            <form method="POST" action="" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+                                <input class="form-control" type="text" placeholder="Nombre" id="input1" aria-label="readonly input example" required formControlName="name">
+                                <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.errors?.['required']"
+                                    class="alert alert-danger" id="nombre">Nombre requerido</div>
+                                <input class="form-control" type="text" placeholder="Apellido" id="input2" aria-label="readonly input example"  required formControlName="surname">
+                                <input class="form-control" type="text" placeholder="Email" id="input3" aria-label="readonly input example" required formControlName="email">
+                                <input class="form-control" type="text" placeholder="Mensaje" id="input4" aria-label="readonly input example" required formControlName="comment">
                                 <button type="submit" class="btn btn-outline-success btn"><span id="btn-span">ENVIAR</span></button>
                             </form>
                         </div>

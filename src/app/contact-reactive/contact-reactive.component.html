@@ -5,10 +5,16 @@
             <form method="POST" action="" (ngSubmit)="onSubmit()" [formGroup]="contactForm">
                 <input class="form-control" type="text" placeholder="Nombre" id="input1" aria-label="readonly input example" required formControlName="name">
                 <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.errors?.['required']"
-                    class="alert alert-danger" id="nombre">Nombre requerido</div>
+                    class="alert alert-danger" id="nombre">Nombre es requerido</div>
                 <input class="form-control" type="text" placeholder="Apellido" id="input2" aria-label="readonly input example"  required formControlName="surname">
+                <div *ngIf="contactForm.get('surname')?.touched && contactForm.get('surname')?.errors?.['required']"
+                    class="alert alert-danger" id="apellido">Apellido es  requerido</div>
                 <input class="form-control" type="text" placeholder="Email" id="input3" aria-label="readonly input example" required formControlName="email">
+                <div *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.errors?.['required']"
+                    class="alert alert-danger" id="email">El email es requerido</div>
                 <input class="form-control" type="text" placeholder="Mensaje" id="input4" aria-label="readonly input example" required formControlName="comment">
+                <div *ngIf="contactForm.get('comment')?.touched && contactForm.get('comment')?.errors?.['required']"
+                    class="alert alert-danger" id="mensaje">El mensaje es requerido</div>
                 <button type="submit" class="btn btn-outline-success btn"><span id="btn-span">ENVIAR</span></button>
             </form>
         </div>

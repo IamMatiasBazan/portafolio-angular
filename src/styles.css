@@ -1,1 +1,188 @@
 /* You can add global styles to this file, and also import other style files */
+
+#rectangulo1 {
+    width: 100%;
+    height: 500px;
+    background-color: #13E67B;
+    position: absolute;
+    left: 18px;
+    border-radius: 0 0 15px 15px; 
+}
+
+nav ul {
+    list-style: none;
+}
+
+#portafolio{
+    position: relative;
+    right: 70%;
+    height: 7px;
+}
+
+#portafolio li {
+    font-family: 'Coiny', cursive;
+    font-size: 34px;
+}
+
+nav ul li {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    left: 70%;
+    padding: 4px 4px 3px 4px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Coiny', cursive;
+}
+
+li > a {
+    color:#fff;
+    text-decoration: none;
+}
+img {
+    position: relative;
+    top: 20px;
+    left: 38%;
+}
+
+#titulo {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 33%;
+    color: #fff;
+}
+
+/* PROYECTOS */
+.proyecto {
+    font-family: 'Coiny', cursive;
+    position: absolute;
+    top: 73%;
+    left: 42%;
+}
+
+.galeria-container {
+    display: inline-block;
+    position: relative;
+    right: 85%;
+    padding-left: 70px;
+}
+
+.galeria-item {
+    position: relative;
+    left: 40px;
+}
+
+.galeria-container3 {
+    position: absolute;
+    top: 7.5%;
+    left: 20%;
+}
+
+.galeria-container4 {
+    position: relative;
+    top: 30px;
+    right: 51.2%;
+}
+
+.sobremi {
+    position: relative;
+    top: 55px;
+    left: 54%;
+}
+
+.parrafo {
+    position: relative;
+    top: 100%;
+    right: 40%;
+    padding-top: 8px;
+}
+
+#parrafo-sobre-mi {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+footer {
+    position: absolute;
+    top: 520px;
+    left: 1px;
+    right: 2px;
+    width: 125%;
+    height: 100px;
+    background-color: #13E67B;
+    border-radius: 15px 15px 0 0;
+}
+
+.color {
+    position: relative;
+    left: 42%;
+}
+
+/* CONTACTENOS */
+.contacto {
+    padding-left: 70%;
+    padding-right: 15%;
+    position: absolute;
+    top: 120%;
+    left: 14%;
+}
+
+#espacio-contacto {
+    position: absolute;
+    right: 17%;
+}
+
+.formularios {
+    padding-bottom: 10px;
+}
+
+.formularios > input {
+    padding: 10px 10px 10px 10px;
+}
+
+#input1 {
+    position: absolute;
+    top: 60px;
+}
+
+#input2 {
+    position: absolute;
+    top: 120px;
+}
+
+#input3 {
+    position: absolute;
+    top: 180px;
+}
+
+#input4 {
+    position: absolute;
+    top: 240px;
+    padding-top: 100px;
+}
+
+.btn {
+    position: absolute;
+    top: 400px;
+    padding-left: 75%;
+}
+
+input::placeholder{
+    position: absolute;
+    top: 10px;
+}
+
+#btn-span {
+    position: relative;
+    right: 115px;
+}
+/* CERRAR CONTACTENOS */
+
+/* FOOTER */
+h4 {
+    position: relative;
+    top: 10px;
+}
+
+/* CERRAR FOOTER */

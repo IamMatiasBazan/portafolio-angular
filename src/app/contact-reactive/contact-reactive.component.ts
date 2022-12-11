@@ -1,0 +1,30 @@
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
+@Component({
+  selector: 'app-contact-reactive',
+  templateUrl: './contact-reactive.component.html',
+  styleUrls: ['./contact-reactive.component.css']
+})
+export class ContactReactiveComponent implements OnInit {
+  contactForm!: FormGroup;
+  
+  constructor( private readonly fb: FormBuilder) {}
+  
+  ngOnInit(): void { 
+    this.contactForm = this.initForm();
+  }
+
+  onsubmit(): void {
+    console.log("Form ->");
+  }
+
+  initForm():FormGroup{
+    return this.fb.group({
+      name: ['', [Validators.required, Validators.minLength(3)]],
+      surname: ['', [Validators.required, Validators.minLength(3)]],
+      email: ['', [Validators.required, Validators.minLength(3)]],
+      comment: ['', [Validators.required, Validators.minLength(3)]],
+    })
+  }
+}
